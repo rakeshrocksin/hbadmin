@@ -1,0 +1,24 @@
+{
+  "name": "hbadmin_app",
+  "version": "1.0.0",
+  "description": "Hawkerbells Admin Demo",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "node": "^9.3.0",
+    "nodemon": "^1.14.7",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2",
+    "yargs": "^10.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
