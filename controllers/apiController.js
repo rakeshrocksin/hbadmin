@@ -1,12 +1,41 @@
-var Todos = require('../models/todoModel');
-var bodyParser = require('body-parser');
-
+var config = require('./config/config');
 
 module.exports = function(app){
     
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extended:true}));
+    // respond to the main index URL
+    app.get('/', (req, res) => {
+    
+      res.render('pages/index');
+    });
+    
+    app.get('/about',  (req, res) => {
+      res.render('pages/about');
+    });
+    
+    app.get('/login',  (req, res) => {
+      res.render('index');
+    });
+    
+    app.get('/signup',  (req, res) => {
+      res.render('index');
+    });
+    
+    app.get('/addmerchant',  (req, res) => {
+      res.render('index');
+    });
+    
+    
+   
+    
+   
+    
+    app.get('/addnotification',  (req, res) => {
+      res.render('index');
+    });
+    
 
+
+    
     app.get('/api/todos/:uname',function(req,res){
         
         Todos.find({ username : req.params.uname},
